@@ -4,10 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -26,6 +28,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.meetingtiming.ui.theme.MeetingTimingTheme
@@ -65,13 +69,40 @@ fun Mainscreen() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp)
+                    .height(40.dp)
+                    .offset(y = 0.dp, x = 0.dp)
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(
+                        MaterialTheme.colorScheme.primary,)
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.gems_logo),
+                    contentDescription = "Ice Cream Image",
+                    modifier = Modifier
+                        .aspectRatio(1f / 1f),
+                    contentScale = ContentScale.Crop
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+                    .height(200.dp)
+                    .offset(y = 0.dp, x = 0.dp)
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(
+                        MaterialTheme.colorScheme.primary,)
+            ) {Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
                     .height(200.dp)
                     .offset(y = 0.dp, x = 0.dp)
                     .clip(RoundedCornerShape(16.dp))
                     .background(
                         MaterialTheme.colorScheme.primary,)
                     .clickable { }
-            )
+            )}
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
