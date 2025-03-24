@@ -1,4 +1,4 @@
-package com.example.meetingtiming.ui.theme
+package com.g0g4n.meetingtiming.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -20,7 +20,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Color(0xFFFAFAFA),
+    primary = Color(0xFFE3E3E3),
     secondary = Color(0xFF3D8EFD),
     tertiary = Color(0xFF929292),
     background = Color(0xFFF0F0F0)

@@ -1,4 +1,4 @@
-package com.example.meetingtiming
+package com.g0g4n.meetingtiming
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

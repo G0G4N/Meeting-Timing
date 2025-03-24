@@ -1,4 +1,4 @@
-package com.example.meetingtiming.ui.theme
+package com.g0g4n.meetingtiming.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

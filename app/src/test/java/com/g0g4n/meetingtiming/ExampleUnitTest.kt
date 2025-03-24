@@ -1,4 +1,4 @@
-package com.example.meetingtiming
+package com.g0g4n.meetingtiming
 
 import org.junit.Test
 

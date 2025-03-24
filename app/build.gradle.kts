@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.meetingtiming"
+    namespace = "com.g0g4n.meetingtiming"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.meetingtiming"
+        applicationId = "com.g0g4n.meetingtiming"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
